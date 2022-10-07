@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body onload="entrar()">
+    <h1 onclick="cambiarTexto(this)">Manejo DOM con JavaScript</h1>
+    <h1 id="titulo">Segundo titulo</h1>
+    <p id="mostrar"></p>
+    <br>
+    <script>
+        function cambiarTexto(titulo){
+            titulo.innerHTML = "Cambiamos el título";
+        }
+        function mostrar() {
+            document.getElementById("mostrar").innerHTML = "Nuevo contenido";
+        }
+        document.getElementById("titulo").onclick = mostrar;
+        function entrar(){
+            alert("Entrando a la pagina web");
+            let textd  = "";
+            if(navigator.cookieEnabled){
+                texto = "Cookies están habilitadas";
+            }else{
+                texto = "Cookies están inhabilitadas";
+            }
+            document.getElementById("mostrar").innerHTML = texto;
+        }
+    </script>
+</body>
+</html>

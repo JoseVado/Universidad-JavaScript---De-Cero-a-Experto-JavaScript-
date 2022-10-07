@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo" onmouseover="rojo(this)" onmouseout="azul(this)">
+        Manejo DOM con JavaScript
+    </h1>
+
+    <h1 onmousedown="rojo(this)" onmouseup="azul(this)" onclick="verde(this)">
+        Segundo titulo
+    </h1>
+    <br>
+    Nombre: <input type="text" onchange="convertir(this)"onfocus="cambiar(this)" onblur="regresar(this)">
+    <br>
+    Apellido: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)">
+    <script>
+        function convertir(nombreInput){
+            nombreInput.value = nombreInput.value.toUpperCase();
+        }
+        function rojo(titulo){
+            titulo.style.color = "red";
+        }
+        function azul(titulo) {
+                titulo.style.color = "blue";
+        }
+        function verde(titulo) {
+                titulo.style.color = "green";
+        }
+        function cambiar(elementoInput){
+            elementoInput.style.background = "yellow";
+        }
+        function regresar(elementoInput) {
+                elementoInput.style.background = "white";
+            }
+    </script>
+</body>
+</html>
