@@ -1,0 +1,24 @@
+h1{
+    color: #f07167;
+}
+
+.boton:link, .boton:visited{
+    background-color: #f07167;
+    color: #8ecae6;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.boton:hover, .boton:active{
+    background-color: #ed5b5b;
+    color: #8ecae6;
+    text-decoration: underline;
+
+}
+
+img{
+    width: 150px;
+}
+
